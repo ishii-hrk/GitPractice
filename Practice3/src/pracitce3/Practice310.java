@@ -11,8 +11,13 @@ public class Practice310 {
              };
         // 四季をループで回す
         for(Season s : seasons) {
-        	System.out.println(s);
-        }
+        	if( s == Season.SUMMER) {
+        	System.out.println( s + "は暑い！");
+        	}else if( s == Season.WINTER) {
+        		System.out.println( s + "は寒い！");
+        	}else {
+        		System.out.println(s);
+        	}
     }
 }
 // ここに季節列挙型を作成してください
@@ -28,5 +33,5 @@ enum Season{
 	public String toString() {
 		return this.name;
 	}
-
+}
 }
